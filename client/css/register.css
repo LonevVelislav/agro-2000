@@ -1,0 +1,40 @@
+.section-register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+}
+.register-form-element {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.register-form-element a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.register-form-element a:hover,
+.register-form-element a:active {
+  border-bottom: 1px solid #37b24d;
+}
+
+.register-form-element label {
+  margin-right: 0.8rem;
+}
+.btn-register input {
+  background-color: #37b24d;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.8rem;
+}

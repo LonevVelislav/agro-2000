@@ -1,0 +1,183 @@
+.machine-stats {
+  display: grid;
+  grid-template-columns: 2fr 35rem;
+}
+
+.machine-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 0.8rem;
+}
+.machine-details-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  table-layout: fixed;
+}
+.machine-details-table th,
+td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 8px;
+}
+.machine-details-table tr {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.machine-details-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tr > td:first-child {
+  font-weight: 600;
+}
+
+.machine-contacts-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5rem;
+}
+
+.machine-contacts-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.1s;
+  text-decoration: none;
+  border-bottom: 2px solid #37b24d;
+}
+
+.machine-contacts-element ion-icon {
+  color: #37b24d;
+}
+
+.machine-contacts-element:hover,
+.machine-contacts-element:active {
+  color: #37b24d;
+}
+
+.machine-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-delete {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 4rem;
+  color: #fff;
+  border: none;
+  background-color: red;
+  cursor: pointer;
+}
+.btn-delete ion-icon {
+  font-size: 2rem;
+}
+
+.machine-details-price {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.machine-details-price span {
+  background-color: #333;
+  margin-right: 0.8rem;
+  color: #ffd43b;
+  font-weight: 500;
+}
+
+.machine-details-price p {
+  margin-right: 0.8rem;
+  color: #ffffff;
+}
+
+#currency ion-icon {
+  color: #333;
+}
+
+.machine-stats-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.machine-stats-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 10px 20px;
+  background: #333;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.machine-stats-btn:hover,
+.machine-stats-btn:active {
+  background-color: #eeeeee;
+  color: #333;
+  box-shadow: inset 0 0 0 2px #333;
+}
+
+#type,
+#make,
+#transmission,
+#filter {
+  padding: 4px 8px;
+  border: 1px solid #37b24d;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+#type:focus,
+#make:focus,
+#transmission:focus,
+#filter:focus {
+  outline: none;
+  color: #333;
+  border-color: #afe0b8;
+  background-color: #afe0b8;
+}
+.saved {
+  background-color: #ffd43b;
+}
+
+.machine-info {
+  width: 100%;
+  background-color: #f0f0f0;
+  box-shadow: inset 0 0 0 1px #ccc;
+  overflow: hidden;
+}
+.machine-info p {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+#description {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

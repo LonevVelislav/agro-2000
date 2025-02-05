@@ -1,0 +1,74 @@
+<div class="create-section">
+  <form @submit=${onEdit}>
+    <div class="create-form-element">
+      <label for="type">type</label>
+      <select name="type" id="type" .value=${machine.type}>
+        <option value="tractor">tractor</option>
+        <option value="harvester">harvester</option>
+      </select>
+    </div>
+    <div class="create-form-element">
+      <label for="make">make</label>
+      <select name="make" id="make" .value=${machine.make}>
+        <option value="Jhon Deere">Jhon Deere</option>
+        <option value="Class">Class</option>
+      </select>
+    </div>
+     <div class="create-form-element">
+      <label for="transmission">transmission</label>
+      <select name="transmission" id="transmission" .value=${machine.details.transmission}>
+        <option value="IVT-autopower">IVT-autopower</option>
+        <option value="Powershift">Powershift</option>
+        <option value="AutoPower">AutoPower</option>
+        <option value="CommandQuad">CommandQuad</option>
+        <option value="DirectDrive">DirectDrive</option>
+        <option value="ElectroIVT">ElectroIVT</option>
+        <option value="SynchroTransmission">SynchroTransmission</option>
+        <option value="PowerQuad-AutoQuad">PowerQuad-AutoQuad</option>
+      </select>
+    </div>
+    <div class="create-form-element">
+      <label for="model">model</label>
+      <input type="text" name="model" id="model" .value=${machine.model} />
+    </div>
+    <div class="create-form-element">
+      <label for="engine">engine</label>
+      <input type="text" name="engine" id="engine" .value=${machine.details.engine}/>
+    </div>
+    <div class="create-form-element">
+      <label for="horsepower">horsepower</label>
+      <input type="number" name="horsepower" id="horsepower" .value=${machine.details.horsepower}/>
+    </div>
+    <div class="create-form-element">
+      <label for="scv">SCV</label>
+      <input type="number" name="scv" id="scv" .value=${machine.details.scv}/>
+    </div>
+    <div class="create-form-element">
+      <label for="hydraulicPumps">Hydraulic Pumps</label>
+      <input type="text" name="hydraulicPumps" id="hydraulicPumps" .value=${machine.details.hydraulicPumps}/>
+    </div>
+    <div class="create-form-element">
+      <label for="frontTires">Demensions of front tires</label>
+      <input type="text" name="frontTires" id="frontTires" .value=${machine.details.frontTires}/>
+    </div>
+    <div class="create-form-element">
+      <label for="rearTires">Demensions of rear tires</label>
+      <input type="text" name="rearTires" id="rearTires" .value=${machine.details.rearTires}/>
+    </div>
+    <div class="create-form-element">
+      <label for="hours">hours</label>
+      <input type="number" name="hours" id="hours" .value=${machine.details.hours}/>
+    </div>
+    <div class="create-form-element">
+      <label for="status">status</label>
+      <input type="status" name="status" id="status" .value=${machine.details.status}/>
+    </div>
+    <div class="create-form-element">
+      <label for="year">year</label>
+      <input type="number" name="year" id="year" .value=${machine.details.year}/>
+    </div>
+    <div class="create-form-element">
+        <input type="submit" value="save"></input>
+    </div>
+  </form>
+</div>

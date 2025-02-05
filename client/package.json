@@ -1,0 +1,20 @@
+{
+  "name": "agro-2000",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 3050 -P http://0.0.0.0:3050? -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Velislav Lonev",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "lit-html": "^3.2.1",
+    "page": "^1.11.6"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="files-box hidden">
+  <input
+    @change="${handleDocumentFileChange}"
+    type="file"
+    id="file"
+    name="file"
+    accept=".pdf, .doc, .docx, .xls, .xlsx"
+    style="display: none"
+  />
+
+  <button
+    class="btn"
+    type="button"
+    onclick="document.getElementById('file').click()"
+  >
+    documents
+  </button>
+</div>

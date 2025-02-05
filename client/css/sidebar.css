@@ -1,0 +1,123 @@
+.sidebar-menu {
+  display: flex;
+  align-items: start;
+  top: 0;
+  position: absolute;
+  overflow: visible; /* Hide overflowing text/content */
+  transition: all 0.2s;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(238, 238, 238, 1);
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.sidebar-menu a > * {
+  pointer-events: none;
+}
+
+.sidebar-menu:hover,
+.sidebar-menu:active {
+  background-color: rgba(238, 238, 238, 0.8);
+}
+
+.sidebar-menu li a {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.sidebar-menu li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.icon img {
+  width: 30px;
+}
+.model-icon {
+  width: 12rem;
+}
+
+.sidebar-menu li .text {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Content Styling */
+.content {
+  margin-left: 60px; /* Match collapsed sidebar width */
+  padding: 20px;
+  flex: 1;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  cursor: pointer;
+  background-color: rgba(55, 178, 77, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #333;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 5px 0;
+  position: absolute;
+  visibility: hidden;
+  top: 100%;
+  left: 0;
+  background-color: rgba(214, 214, 214, 1);
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  transition: height 0.1s ease;
+  height: 0;
+}
+
+.dropdown-menu-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  position: absolute;
+  visibility: hidden;
+  top: 100%;
+  left: 0;
+  background-color: rgba(214, 214, 214, 1);
+  z-index: 1002;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  transition: height 0.1s ease;
+  height: 0;
+}
+
+.dropped {
+  visibility: visible;
+  height: 60px;
+}
+.dropdown-menu input {
+  padding: 5px;
+  font-size: 2.2rem;
+}
