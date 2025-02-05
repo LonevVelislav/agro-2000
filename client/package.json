@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a localhost -p 3020 -P http://localhost:3020? -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-html": "^3.1.2",
+    "page": "^1.11.6"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

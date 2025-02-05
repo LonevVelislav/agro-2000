@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/login" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/app/logo64.png" />
+    <link rel="apple-touch-icon" href="./img/app/logo180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <title>auto-service</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./src/app.js" type="module"></script>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <nav></nav>
+    <div class="menu">
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-navigation" name="car-outline"></ion-icon>
+        <ion-icon
+          class="icon-mobile-navigation"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+    </div>
+    <section></section>
+
+    <div class="spinner hidden">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <a href="/select" class="admin-control"
+      ><ion-icon name="build-outline"></ion-icon
+    ></a>
+  </body>
+</html>
